@@ -1,0 +1,44 @@
+name: Linting with golangci-lint
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - "**.md"
+      - "*.yml"
+      - "Makefile"
+      - "docs/*.md"
+      - ".gitignore"
+      - "LICENSE"
+      - ".github/*.yml"
+      - ".github/ISSUE_TEMPLATE/*.md"
+      - ".github/*.md"
+      - ".github/workflows/main.yml"
+      - ".github/workflows/release.yml"
+  pull_request:
+    paths-ignore:
+      - "**.md"
+      - "*.yml"
+      - "Makefile"
+      - "docs/*.md"
+      - ".gitignore"
+      - "LICENSE"
+      - ".github/*.yml"
+      - ".github/ISSUE_TEMPLATE/*.md"
+      - ".github/*.md"
+      - ".github/workflows/main.yml"
+      - ".github/workflows/release.yml"
+jobs:
+  golangci:
+    name: Linter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: golangci-lint
+      - uses: actions/setup-go@v3
+        with:
+          go-version: 1.19.X
+      - uses: golangci/golangci-lint-action@v3.3.0
+        with:
+          version: latest
+          args: --issues-exit-code=0 --new=true --sort-results --skip-dirs-use-default --tests=false

@@ -1,0 +1,12 @@
+# Ignored wildcards
+.github/**/*
+.devcontainer/**/*
+*.md
+
+# File targets
+CODEOWNERS
+Dockerfile
+LICENSE
+Makefile
+.dockerignore
+.gitignore
