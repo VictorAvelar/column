@@ -8,16 +8,8 @@ run:
 
 ci-lint:
     # colored-line-number|line-number|json|tab|checkstyle|code-climate|junit-xml|github-actions
-	@golangci-lint run --out-format=tab --issues-exit-code=0 --sort-results --skip-dirs-use-default --tests=false --presets=bugs,complexity,format,performance,style,unused
+	@golangci-lint run
 .PHONY: ci-lint
-
-pr-lint:
-	@golangci-lint run --issues-exit-code=0 --out-format=github-actions --new=true --sort-results --skip-dirs-use-default --tests=false --presets=bugs,complexity,format,performance,style,unused
-.PHONY: pr-lint
-
-ci-all-presets:
-	@golangci-lint run --out-format=tab --issues-exit-code=0 --sort-results --skip-dirs-use-default --tests=false --presets=bugs,comment,complexity,error,format,import,metalinter,module,performance,sql,style,test,unused
-.PHONY: ci-all-presets
 
 lint:
 	@go version

@@ -1,5 +1,3 @@
-# golangci-lint configuration
-
 run:
   concurrency: 4
   timeout: 20s
