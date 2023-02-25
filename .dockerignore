@@ -3,6 +3,7 @@
 .devcontainer/**/*
 *.md
 *.yaml
+*.toml
 
 # File targets
 CODEOWNERS
