@@ -1,5 +1,7 @@
 package example
 
+import "testing"
+
 func TestReturnsTrue(t *testing.T) {
 	if ReturnsTrue() != true {
 		t.Error("Expected true, got false")
