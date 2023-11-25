@@ -34,6 +34,11 @@
     "ghcr.io/devcontainers/features/common-utils:2": {
       "configureZshAsDefaultShell": true,
       "username": "root"
+    },
+    "ghcr.io/devcontainers-contrib/features/starship:1": {},
+    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+      "packages": "exa,bat,curl,fontconfig",
+      "upgradePackages": true
     }
   },
   "customizations": {
@@ -102,7 +107,10 @@
         "editor.formatOnSave": true,
         "editor.formatOnPaste": true,
         "editor.bracketPairColorization.enabled": true,
-        "editor.guides.bracketPairs": "active"
+        "editor.guides.bracketPairs": "active",
+        "workbench.iconTheme": "material-icon-theme",
+        "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+        "editor.fontLigatures": true,
       }
     }
   },
@@ -114,6 +122,7 @@
   },
   "postCreateCommand": {
     "install-zsh-plugins": "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions",
+    "install-firacode": "mkdir /root/.fonts && cd /root/.fonts && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip && unzip FiraCode.zip && rm FiraCode.zip &&fc-cache /root/.fonts",
     "modules": "go mod download"
   },
   "remoteUser": "root",
