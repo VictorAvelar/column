@@ -3,7 +3,7 @@
 ## Supported Versions
 
 Even though go offers full backwards compatibility, this package will only be concerned about the versions tested and
-declared inside the `.scrutinizer.yml` file.
+declared inside the `.github/workflows/main.yml` file.
 
 | Version  | Supported          |
 | -------- | ------------------ |
@@ -12,10 +12,11 @@ declared inside the `.scrutinizer.yml` file.
 | 1.14.x   | :warning:          |
 | 1.15.x   | :warning:          |
 | 1.16.x   | :warning:          |
-| 1.17.x   | :white_check_mark: |
-| 1.18.x   | :white_check_mark: |
-| 1.19.x   | :white_check_mark: |
-| 1.19.x   | :white_check_mark: |
+| 1.17.x   | :warning:          |
+| 1.18.x   | :warning:          |
+| 1.19.x   | :warning:          |
+| 1.20.x   | :warning:          |
+| 1.21.x   | :white_check_mark: |
 | master   | :x:                |
 
 ## Reporting a Vulnerability
