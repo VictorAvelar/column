@@ -3,7 +3,7 @@ tmp_dir = "tmp"
 
 [build]
 cmd = "go build -o ./tmp/server cmd/server/main.go"
-bin = "tmp/metrics"
+bin = "tmp/server"
 include_ext = ["go", "svelte", "js", "html", "css"]
 exclude_dir = [".devcontainer", ".github", ".vscode"]
 exclude_regex = ["_test\\.go", "*\\.yml", "*\\.md"]
