@@ -5,8 +5,8 @@ run:
   tests: false
   skip-dirs-use-default: true
   modules-download-mode: readonly
-  go: '1.18'
-  
+  go: "1.18"
+
 output:
   format: tab
   sort-results: true
@@ -24,5 +24,5 @@ linters:
     - performance
     - sql
     - style
-    
+
   fast: true

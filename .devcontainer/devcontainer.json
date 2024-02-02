@@ -81,12 +81,12 @@
         "[go]": {
           "editor.defaultFormatter": "golang.go",
           "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            "source.organizeImports": "explicit"
           }
         },
         "[go.mod]": {
           "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            "source.organizeImports": "explicit"
           }
         },
         "gopls": {
@@ -117,7 +117,18 @@
         "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
         "editor.fontLigatures": true,
         "files.insertFinalNewline": true,
-        "files.trimFinalNewlines": true
+        "files.trimFinalNewlines": true,
+        "cSpell": {
+          "allowCompoundWords": true,
+          "ignorePaths": [
+            ".devcontainer/devcontainer.json",
+            "Taskfile.yml",
+            "go.mod",
+            "go.sum",
+            ".goreleaser.yml",
+            ".golangci.yaml"
+          ]
+        }
       }
     }
   },
