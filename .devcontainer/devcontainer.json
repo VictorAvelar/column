@@ -50,6 +50,7 @@
         "eamodio.gitlens",
         "jasonlhy.hungry-delete",
         "formulahendry.auto-rename-tag",
+        "bierner.github-markdown-preview",
         "DavidAnson.vscode-markdownlint",
         "aaron-bond.better-comments",
         "streetsidesoftware.code-spell-checker",
@@ -57,9 +58,13 @@
         "ms-azuretools.vscode-docker",
         "Gruntfuggly.todo-tree",
         "shardulm94.trailing-spaces",
-        "ms-vscode.makefile-tools",
+        "task.vscode-task",
         "redhat.vscode-yaml",
-        "bungcip.better-toml",
+        "tamasfe.even-better-toml",
+        "GitHub.copilot",
+        "GitHub.vscode-github-actions",
+        "GitHub.copilot-labs",
+        "GitHub.copilot-chat",
         // Go
         "golang.Go"
       ],
@@ -110,7 +115,9 @@
         "editor.guides.bracketPairs": "active",
         "workbench.iconTheme": "material-icon-theme",
         "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-        "editor.fontLigatures": true
+        "editor.fontLigatures": true,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true
       }
     }
   },
@@ -122,7 +129,8 @@
   },
   "postCreateCommand": {
     "install-zsh-plugins": "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions",
-    "install-firacode": "mkdir /root/.fonts && cd /root/.fonts && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip && unzip FiraCode.zip && rm FiraCode.zip &&fc-cache /root/.fonts",
+    "api-reload": "go install github.com/cosmtrek/air@latest",
+    "taskfile": "go install github.com/go-task/task/v3/cmd/task@latest",
     "modules": "go mod download"
   },
   "remoteUser": "root",
