@@ -1,3 +1,3 @@
 module github.com/victoravelar/column
 
-go 1.20
+go 1.21
