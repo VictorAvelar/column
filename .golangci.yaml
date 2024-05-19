@@ -37,8 +37,8 @@ linters-settings:
         allow:
           - $gostd
           - github.com/victoravelar
-      deny:
-        - pkg: "github.com/sirupsen/logrus"
-          desc: Should be replaced by standard lib slog package
-        - pkg: "github.com/pkg/errors"
-          desc: Should be replaced by standard lib errors package
+        deny:
+          - pkg: "github.com/sirupsen/logrus"
+            desc: Should be replaced by standard lib slog package
+          - pkg: "github.com/pkg/errors"
+            desc: Should be replaced by standard lib errors package
