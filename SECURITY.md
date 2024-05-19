@@ -16,6 +16,7 @@ declared inside the `.github/workflows/main.yml` file.
 | 1.18.x   | :warning:          |
 | 1.19.x   | :warning:          |
 | 1.20.x   | :warning:          |
+| 1.21.x   | :warning:          |
 | 1.21.x   | :white_check_mark: |
 | master   | :x:                |
 

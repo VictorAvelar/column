@@ -3,13 +3,16 @@ run:
   timeout: 20s
   issues-exit-code: 2
   tests: false
-  skip-dirs-use-default: true
   modules-download-mode: readonly
-  go: "1.18"
+  go: "1.22"
 
 output:
-  format: tab
+  formats:
+    - format: json
+      path: stderr
+    - format: github-actions
   sort-results: true
+  show-stats: true
 
 linters:
   presets:
@@ -26,3 +29,16 @@ linters:
     - style
 
   fast: true
+
+linters-settings:
+  depguard:
+    rules:
+      main:
+        allow:
+          - $gostd
+          - github.com/victoravelar
+      deny:
+        - pkg: "github.com/sirupsen/logrus"
+          desc: Should be replaced by standard lib slog package
+        - pkg: "github.com/pkg/errors"
+          desc: Should be replaced by standard lib errors package
