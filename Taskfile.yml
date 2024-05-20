@@ -27,3 +27,7 @@ tasks:
     cmds:
       - go mod verify
       - go mod tidy
+
+  fix-mod:
+    cmds:
+      - go mod edit -mod

@@ -2,34 +2,34 @@
 
 # Description
 
-Describe your changes in detail.
+<!-- Describe your changes in detail. -->
 
 ## Motivation and context
 
-Why is this change required? What problem does it solve?
+<!-- Why is this change required? What problem does it solve?
 
 If it fixes an open issue, please link to the issue here (if you write `fixes #num`
-or `closes #num`, the issue will be automatically closed when the pull is accepted.)
+or `closes #num`, the issue will be automatically closed when the pull is accepted.) -->
 
 ## How has this been tested?
 
-Please describe in detail how you tested your changes.
+<!-- Please describe in detail how you tested your changes.
 
 Include details of your testing environment, and the tests you ran to
-see how your change affects other areas of the code, etc.
+see how your change affects other areas of the code, etc. -->
 
 - [ ] Unit tests added / updated
 - [ ] The tests run on docker (using `make test`)
 - [ ] The required `test data` has been added / updated
 
-If you are running the tests locally, please specify:
+<!-- If you are running the tests locally, please specify:
 
 - OS: [e.g. ubuntu/macos/windows]
-- Go version [e.g. 1.19.x]
+- Go version [e.g. 1.19.x] -->
 
 ## Types of changes
 
-What types of changes does your code introduce? Put an `x` in all the boxes that apply:
+<!-- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
 
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
