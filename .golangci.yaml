@@ -10,7 +10,7 @@ output:
   formats:
     - format: json
       path: stderr
-    - format: github-actions
+    - format: colored-line-number
   sort-results: true
   show-stats: true
 
