@@ -41,6 +41,6 @@ jobs:
       - uses: actions/setup-go@f111f3307d8850f501ac008e886eec1fd1932a34
         with:
           go-version: 1.22.X
-      - uses: golangci/golangci-lint-action@051d91933864810ecd5e2ea2cfd98f6a5bca5347
+      - uses: golangci/golangci-lint-action@0adbc47a5910e47adb692df88187ec8c73c76778
         with:
           version: latest
