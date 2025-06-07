@@ -27,7 +27,7 @@
     }
   ],
   "features": {
-    "ghcr.io/devcontainers-contrib/features/act-asdf:2": {},
+    "ghcr.io/devcontainers-extra/features/act-asdf:2": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
       "dockerDashComposeVersion": "v2"
     },
@@ -35,7 +35,7 @@
       "configureZshAsDefaultShell": true,
       "username": "root"
     },
-    "ghcr.io/devcontainers-contrib/features/starship:1": {},
+    "ghcr.io/devcontainers-extra/features/starship:1": {},
     "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
       "packages": "exa,bat,curl,fontconfig",
       "upgradePackages": true
