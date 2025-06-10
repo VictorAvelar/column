@@ -1,4 +1,5 @@
-ARG GO_VERSION=1-1-bullseye
+FROM mcr.microsoft.com/vscode/devcontainers/go:1.24-bullseye
 
-ARG VARIANT=1-bullseye
-FROM mcr.microsoft.com/vscode/devcontainers/go:${GO_VERSION}
+# Install additional packages
+RUN go install github.com/air-verse/air@latest
+RUN go install github.com/go-task/task/v3/cmd/task@latest
